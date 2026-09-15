@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e Cores</title>
+</head>
+
+<body>
+    <div class="secao">
+        <h1>Trabalhando com Imagens e Cores</h1>
+        <p class="vermelho">Texto em vermelho</p>
+        <p class="verde">Texto em verde (hexadecimal)</p>
+        <p class="azul">Texto em azul (RGB)</p>
+    </div>
+    <hr>
+
+    <div class="secao">
+        <h2>Imagens</h2>
+        <img class="banner" src="./assets/Itaú.jpg" alt="Banner promocional">
+        <img class="logo" src="./assets/Senai.png" alt="Logo da empresa">
+    </div>
+    <hr>
+
+    <div class="secao">
+        <h2>Imagens com link</h2>
+        <a target="_blank" href="https://www.google.com/?hl=pt_BR"><img class="hover" src="./assets/google.jpg" alt="Clique aqui"></a>
+    </div>
+    <hr>
+
+    <div class="amarelo secao">
+        <p>Conteúdo com fundo amarelo</p>
+    </div>
+
+    <style>
+        body {
+            margin-left: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+
+        body {
+            background-color: black;
+            color: #ffff;
+            display: flex;
+            flex-direction: column;
+        }
+        hr{
+            color: #ffff;
+        }
+        .secao{
+            align-self: center;
+        }
+
+        .vermelho {
+            color: red;
+        }
+
+        .verde {
+            color: #00ff00;
+        }
+
+        .azul {
+            color: rgb(0, 0, 255);
+        }
+
+        .amarelo {
+            background-color: yellow;
+            padding: 10px;
+            color: black;
+        }
+        .hover{
+            transition: 1s;
+            transition: ease-in-out;
+            width: 250px;
+            height: 100px;
+        }
+        .hover:hover{
+            transform: scale(1.3);
+        }
+
+        .logo {
+            width: 200px;
+            height: 100px;
+        }
+
+        .banner {
+            max-width: 100%;
+        }
+    </style>
+</body>
+
+</html>

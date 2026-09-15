@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista em HTML</title>
+</head>
+
+<body>
+    <h1>Diferentes tipos de lista</h1>
+    <!-- uou lista desordenada a seguir-->
+    <h2>Lista de compras</h2>
+    <!-- estilização com list-style-type -->
+    <!--  
+    Tipos de marcadores:
+    disc - bolinha preta
+    circle - circulo vazado
+    none - sem nada
+    square - Quadrado sólido
+     -->
+    <ul>
+        <li>Cebola</li>
+        <li>Picles</li>
+        <li>Jiló</li>
+        <li>Verduras</li>
+    </ul>
+
+    <hr>
+
+    <!-- uou lista ordenada a seguir -->
+    <!-- 
+     Tipos de marcadores:
+     decimal    -Número (1,2,3)
+     lower-alpha - Letras minúsculas (a, b, c...)
+     upper-alpha - Letras maíusculas(A, B, C...)
+     lowe-roman - Romanos minúsculos (i, ii, iii ...)
+     upper-roman - Romanos maiúculos (I,II, III ...)
+      -->
+
+    <h2>Passos para fazer um café</h2>
+    <ol>
+        <li>Ferver a água</li>
+        <li>Colocar o pó no filtro</li>
+        <li>Despejar a água quente</li>
+        <li>Aguardar coar</li>
+    </ol>
+
+    <!-- Lista de definição: utilizada para exibir termos e suas definições -->
+    <!--
+    dl - cria a lista
+    dt - termo a ser definido
+    dd - descrição do termo 
+    -->
+    <h2>Glossário de termos (lista de definição)</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language - Linguagem de marcação para Web</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - Folhas de estilo em cascata</dd>
+    </dl>
+    <!-- Lista encadeada (aninhada): misturado ol e ul -->
+    <h2>Lista ecadeada</h2>
+    <ul>
+        <li class="borda">Frutas:
+            <!-- sublista sem ordem, pode alterar o marcado -->
+            <!-- Exemplo: list-style-type: circle; -->
+            <ul class="lista-alternada1">
+                <li>Maçã</li>
+                <li>Banana</li>
+                <li>Goiba</li>
+            </ul>
+        </li>
+
+        <li class="borda">Verduras
+            <ol class="lista-alternada2">
+                <li>Alface</li>
+                <li>Espinafre</li>
+                <li>Couve</li>
+            </ol>
+        </li>
+
+        </li>
+    </ul>
+    <!-- estilo -->
+    <style>
+        ul {
+            list-style-type: disc;
+            width: 5%;
+            gap: 40px;
+        }
+
+        ol {
+            list-style-type: upper-roman;
+            width: 10%;
+        }
+
+        li {
+            border: 2px, solid, red;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .lista-alternada1 {
+            list-style-type: circle;
+        }
+
+        .lista-alternada2 {
+            list-style-type: lower-roman;
+        }
+
+        .borda {
+            border: 2px, solid, purple;
+            width: 200%;
+        }
+        .borda li{
+            width: 10vh;
+        }
+    </style>
+
+</body>
+
+</html>

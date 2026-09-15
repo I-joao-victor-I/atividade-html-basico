@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+</head>
+
+<body>
+    <h1>Trabalhando com Tabelas</h1>
+
+    <h2>Tabelas de Produtos</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <!-- Cabeçalho -->
+        <thead>
+            <tr>
+                <th>Produtos</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+            </tr>
+        </thead>
+        <!-- Corpo -->
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>R$2.500</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Teclado</td>
+                <td>R$ 120</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>R$ 50</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tabela de Mesclagem</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th colspan="2">Vendas por Trimestre</th>
+        </tr>
+        <tr>
+            <td>1º Trimestre</td>
+            <td>R$ 50.000</td>
+        </tr>
+        <tr>
+            <td>2º Trimestre</td>
+            <td>R$ 65.000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Total Semestre</td>
+            <td>R$ 115.000</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
